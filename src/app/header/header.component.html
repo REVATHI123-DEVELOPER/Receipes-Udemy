@@ -1,0 +1,132 @@
+<!-- <nav class="navbar navbar-default">
+    <a class="navbar-brand" href="#">Recipe BOOK</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div >
+      <ul class="navbar-nav ">
+        <li routerLinkActive="active"><a class="nav-link"  routerLink="/recipes">Recipes</a> </li>
+        <li routerLinkActive="active"><a class="nav-link" routerLink="/shopping-list">shopping list</a> </li>
+       </ul>
+   
+  <div class="btn-group" appDropDown #r="appDropDown" >
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
+      Manage
+      <span class="caret"></span></button>
+    <ul class="dropdown-menu" [ngClass]="{'show':r.isOpen}" >
+   
+      <li><a class="dropdown-item" style="cursor: pointer">Save</a></li>
+      <li><a class="dropdown-item" style="cursor: pointer">Delete</a></li>
+    </ul>
+  </div>
+    
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+         <a href="#" class="navbar-brand">Recipe book</a>
+        </div>  
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a style="cursor: pointer">Recipes</a></li>
+                <li><a style="cursor: pointer">Shoppping list</a></li>
+            </ul>
+            <ul>
+                <li>reavth</li>
+            </ul>
+        </div>
+      </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" style="cursor:pointer" href="#">Recipe Book</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li routerLinkActive="active"><a class="nav-link"  routerLink="/receipes">Recipes</a> </li>
+        <li routerLinkActive="active"><a class="nav-link" routerLink="/shopping-list">shopping list</a> </li>
+      </ul>
+      <div class="btn-group" appDropDown #r="appDropDown" >
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
+          Manage
+          <span class="caret"></span></button>
+        <ul class="dropdown-menu" [ngClass]="{'show':r.isOpen}" >
+       
+          <li><a class="dropdown-item" style="cursor: pointer" (click)="onsavedata()">Save</a></li>
+          <li><a class="dropdown-item" style="cursor: pointer" (click)="onfetchdata()">fetch</a></li>
+          <li><a class="dropdown-item" style="cursor: pointer" (click)="onfetchdat()">fetch</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- <div class="collapse navbar-collapse"></div>
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a  routerLink="/receipes">Recipes</a> </li>
+      <li routerLinkActive="active"><a routerLink="/shopping-list">shopping list</a> </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown" appDropDown>
+        <a style="cursor:pointer;" ckass="dropdown-toggle" role="button">MNAGE</a>
+        <ul class="dropdown-menu">
+          <li> <a style="cursor:pointer;">save</a></li>
+          <li> <a style="cursor:pointer;">fecth</a></li>
+
+
+        </ul>
+      </li> -->
+  
+    <!-- <div class="btn-group" appDropDown #r="appDropDown" >
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
+        Manage
+        <span class="caret"></span></button>
+      <ul class="dropdown-menu" [ngClass]="{'show':r.isOpen}" >
+     
+        <li><a class="dropdown-item" style="cursor: pointer">Save</a></li>
+        <li><a class="dropdown-item" style="cursor: pointer">Delete</a></li>
+      </ul>
+    </div> -->
+
+
+
+
+
+
+<!-- 
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Recipe Book</a>
+    </div>
+   <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a routerLink="/recipes">Recipes</a></li>
+      <li routerLinkActive="active"><a routerLink="/shopping-list"> Shopping list</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown" appDropDown>
+        <a href="#" class="dropdown-toggle" role="button">Manage<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Save date</a></li>
+          <li><a href="#">Fetch data</a></li>
+
+        </ul>
+      </li>
+    </ul>
+   -->
